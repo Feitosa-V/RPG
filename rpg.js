@@ -8,81 +8,121 @@ var dados = Number(dado.value)
 if (pericias >= 1 && pericias <=4)
 {
     if (dados <= 15)
-    window.alert('ERROU!')
+    Swal.fire({
+        title: 'ERROUUUUUU!!!',
+        width: 600,
+        padding: '3em',
+        background: '#fff url(/images/trees.png)',
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url("img/errou-faustao.gif")
+          left top
+          no-repeat
+        `
+      })
     else if (dados >= 16 && dados <= 17)
-    window.alert('FRACASSO!')
+    Swal.fire('FRACASSO!')
     else if (dados == 18)
-    window.alert('RUIM!')
+    Swal.fire('RUIM!')
     else if (dados == 19)
-    window.alert('BOM!')
+    Swal.fire('BOM!')
     else if (dados == 20)
-    window.alert('MUITO BOM!')
+    Swal.fire('MUITO BOM!')
 }
 
 if (pericias >= 5 && pericias <=8)
 {
     if (dados <= 7)
-    window.alert('ERROU!')
+    Swal.fire({
+        title: 'ERROUUUUUU!!!',
+        width: 600,
+        padding: '3em',
+        background: '#fff url(/images/trees.png)',
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url("img/errou-faustao.gif")
+          left top
+          no-repeat
+        `
+      })
     else if (dados >= 8 && dados <= 11)
-    window.alert('FRACASSO!')
+    Swal.fire('FRACASSO!')
     else if (dados >= 12 && dados <= 15)
-    window.alert('RUIM!')
+    Swal.fire('RUIM!')
     else if (dados >= 16 && dados <= 18)
-    window.alert('BOM!')
+    Swal.fire('BOM!')
     else if (dados == 19)
-    window.alert('MUITO BOM!')
+    Swal.fire('MUITO BOM!')
     else if (dados == 20)
-    window.alert('CRÍTICO!!!')
+    Swal.fire('CRITOUUU!!!')
 }
 
 if (pericias >= 9 && pericias <= 16)
 {
     if (dados <= 3)
-    window.alert('ERROU!')
+    Swal.fire({
+        title: 'ERROUUUUUU!!!',
+        width: 600,
+        padding: '3em',
+        background: '#fff url(/images/trees.png)',
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url("img/errou-faustao.gif")
+          left top
+          no-repeat
+        `
+      })
     else if (dados >= 4 && dados <= 7)
-    window.alert('FRACASSO!')
+    Swal.fire('FRACASSO!')
     else if (dados >= 8 && dados <= 14)
-    window.alert('RUIM!')
+    Swal.fire('RUIM!')
     else if (dados >= 15 && dados <= 17)
-    window.alert('BOM!')
+    Swal.fire('BOM!')
     else if (dados >= 18 && dados <= 19)
-    window.alert('MUITO BOM!')
+    Swal.fire('MUITO BOM!')
     else if (dados == 20)
-    window.alert('CRÍTICO!!!')
+    Swal.fire('CRITOUUU!!!')
 }
 
 if (pericias >= 17 && pericias <= 19)
 {
     if (dados == 1)
-    window.alert('ERROU!')
+    Swal.fire({
+        title: 'ERROUUUUUU!!!',
+        width: 600,
+        padding: '3em',
+        background: '#fff url(/images/trees.png)',
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url("img/errou-faustao.gif")
+          left top
+          no-repeat
+        `
+      })
     else if (dados >= 2 && dados <= 5)
-    window.alert('FRACASSO!')
+    Swal.fire('FRACASSO!')
     else if (dados >= 6 && dados <= 11)
-    window.alert('RUIM!')
+    Swal.fire('RUIM!')
     else if (dados >= 12 && dados <= 15)
-    window.alert('BOM!')
+    Swal.fire('BOM!')
     else if (dados >= 16 && dados <= 18)
-    window.alert('MUITO BOM!')
+    Swal.fire('MUITO BOM!')
     else if (dados == 19 && dados == 20)
-    window.alert('CRÍTICO!!!')
+    Swal.fire('CRITOUUU!!!')
 }
 
 if (pericias == 20)
 {
     if (dados >= 1 && dados <= 5)
-    window.alert('FRACASSO!')
+    Swal.fire('FRACASSO!')
     else if (dados >= 6 && dados <= 11)
-    window.alert('RUIM!')
+    Swal.fire('RUIM!')
     else if (dados >= 12 && dados <= 15)
-    window.alert('BOM!')
+    Swal.fire('BOM!')
     else if (dados >= 16 && dados <= 17)
-    window.alert('MUITO BOM!')
+    Swal.fire('MUITO BOM!')
     else if (dados >= 18 && dados <= 20)
-    window.alert('CRÍTICO!!!')
+    Swal.fire('CRITOUUU!!!')
 }
 
 }
-//if (pericias + dados == 10)
-    //window.alert('Certo')
-//else
-    //window.alert('Errado')
