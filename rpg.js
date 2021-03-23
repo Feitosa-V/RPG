@@ -1,4 +1,5 @@
-function verifica(){
+function verifica()
+{
 var pericia = window.document.getElementById('pericia')
 var dado = window.document.getElementById('dado')
 
@@ -9,6 +10,7 @@ if (pericias >= 1 && pericias <= 4)
 {
     if (dados <= 15) 
     Swal.fire({
+        icon: 'error',
         title: 'ERROUUUUUU!!!',
         width: 600,
         padding: '3em',
@@ -34,6 +36,7 @@ if (pericias >= 5 && pericias <=8)
 {
     if (dados <= 7)
     Swal.fire({
+        icon: 'error',
         title: 'ERROUUUUUU!!!',
         width: 600,
         padding: '3em',
@@ -54,13 +57,16 @@ if (pericias >= 5 && pericias <=8)
     else if (dados == 19)
     Swal.fire('MUITO BOM!')
     else if (dados == 20)
-    Swal.fire('CRITOUUU!!!')
+    Swal.fire({
+        icon: 'success',
+        title: 'CRITOUUUU!!!'})
 }
 
 if (pericias >= 9 && pericias <= 16)
 {
     if (dados <= 3)
     Swal.fire({
+        icon: 'error',
         title: 'ERROUUUUUU!!!',
         width: 600,
         padding: '3em',
@@ -81,13 +87,16 @@ if (pericias >= 9 && pericias <= 16)
     else if (dados >= 18 && dados <= 19)
     Swal.fire('MUITO BOM!')
     else if (dados == 20)
-    Swal.fire('CRITOUUU!!!')
+    Swal.fire({
+      icon: 'success',
+      title: 'CRITOUUUU!!!'})
 }
 
 if (pericias >= 17 && pericias <= 19)
 {
     if (dados == 1)
     Swal.fire({
+        icon: 'error',
         title: 'ERROUUUUUU!!!',
         width: 600,
         padding: '3em',
@@ -107,8 +116,10 @@ if (pericias >= 17 && pericias <= 19)
     Swal.fire('BOM!')
     else if (dados >= 16 && dados <= 18)
     Swal.fire('MUITO BOM!')
-    else if (dados == 19 && dados == 20)
-    Swal.fire('CRITOUUU!!!')
+    else if (dados <= 19 && dados <= 20)
+    Swal.fire({
+      icon: 'success',
+      title: 'CRITOUUUU!!!'})
 }
 
 if (pericias == 20)
@@ -122,17 +133,39 @@ if (pericias == 20)
     else if (dados >= 16 && dados <= 17)
     Swal.fire('MUITO BOM!')
     else if (dados >= 18 && dados <= 20)
-    Swal.fire('CRITOUUU!!!')
+    Swal.fire({
+      icon: 'success',
+      title: 'CRITOUUUU!!!'})
 }
 
 if (pericias > 20 && dados > 20)
 {
-    Swal.fire('VALOR DIGITADO MUITO ALTO!')
+  Swal.fire({
+    icon: 'warning',
+    title: 'VALOR DIGITADO MUITO ALTO!'})
 }
 
 if (pericias == 0 && dados == 0)
 {
-    Swal.fire('VOCÊ NÃO DIGITOU NENHUM VALOR!')
+  Swal.fire({
+    icon: 'warning',
+    title: 'VOCÊ NÃO DIGITOU NENHUM VALOR!'})
 }
+
+if (pericias > 0 && dados == 0)
+{
+  Swal.fire({
+    icon: 'warning',
+    title: 'VOCÊ NÃO DIGITOU NENHUM VALOR PRO DADO!'})
+}
+
+if (pericias == 0 && dados > 0)
+{
+  Swal.fire({
+    icon: 'warning',
+    title: 'VOCÊ NÃO DIGITOU NENHUM VALOR PARA PERÍCIA!'})
+}
+
+
 
 }
