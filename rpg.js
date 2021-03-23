@@ -5,9 +5,9 @@ var dado = window.document.getElementById('dado')
 var pericias = Number(pericia.value)
 var dados = Number(dado.value)
 
-if (pericias >= 1 && pericias <=4)
+if (pericias >= 1 && pericias <= 4)
 {
-    if (dados <= 15)
+    if (dados <= 15) 
     Swal.fire({
         title: 'ERROUUUUUU!!!',
         width: 600,
@@ -123,6 +123,16 @@ if (pericias == 20)
     Swal.fire('MUITO BOM!')
     else if (dados >= 18 && dados <= 20)
     Swal.fire('CRITOUUU!!!')
+}
+
+if (pericias > 20 && dados > 20)
+{
+    Swal.fire('VALOR DIGITADO MUITO ALTO!')
+}
+
+if (pericias == 0 && dados == 0)
+{
+    Swal.fire('VOCÊ NÃO DIGITOU NENHUM VALOR!')
 }
 
 }
