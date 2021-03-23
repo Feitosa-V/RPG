@@ -116,7 +116,7 @@ if (pericias >= 17 && pericias <= 19)
     Swal.fire('BOM!')
     else if (dados >= 16 && dados <= 18)
     Swal.fire('MUITO BOM!')
-    else if (dados <= 19 && dados <= 20)
+    else if (dados >= 19 && dados <= 20)
     Swal.fire({
       icon: 'success',
       title: 'CRITOUUUU!!!'})
