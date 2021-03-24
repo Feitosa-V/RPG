@@ -2,9 +2,10 @@ function verifica()
 {
 var pericia = window.document.getElementById('pericia')
 var dado = window.document.getElementById('dado')
-
 var pericias = Number(pericia.value)
 var dados = Number(dado.value)
+
+
 
 if (pericias >= 1 && pericias <= 4)
 {
@@ -169,3 +170,15 @@ if (pericias == 0 && dados > 0)
 
 
 }
+
+pericia.addEventListener("keyup",function(event){
+  if (event.keyCode == 13) {
+    event.preventDefault()
+    document.getElementById('verificar').click()}
+})
+
+dado.addEventListener("keyup",function(event){
+  if (event.keyCode == 13) {
+    event.preventDefault()
+    document.getElementById('verificar').click()}
+})
