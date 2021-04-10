@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="shortcut icon" href="../img/dadoD20.ico">
+    <title>RPG</title>
+</head>
+<body>
+    <h1>Rolagem de Dados</h1>
+    <a href="../index.html" class="linkTwo">Voltar a Página Principal</a>
+
+    <section class="container2">
+        <form>
+            <div class="dadosAle">
+                <label >
+                <strong>INFORME QUANTOS DADOS DESEJA ROLAR:</strong>
+                </label>
+                <input type="number" class="inputAle" data-dadosAle name="dadosAle" id="dadosAle">
+            </div>
+            <div class="rolar">
+                <button type="button" class="btnRolar" onclick="rolarDados()" id="rolar">ROLAR<button>
+            </div>
+            <div></div>
+            <h2 id='result' class="resultD"></h2>
+        </form>
+    </section>
+    <script src="script2.js"></script>
+</body>
+</html>

@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing:border-box;
+}
+
+h1
+{
+    margin-top: 20px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    color: aliceblue;
+}
+body
+{
+    background: url("../img/rpgImage3.jpg") no-repeat repeat;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label{
+    font-size: 23px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: white;
+}
+
+.container
+{
+    width: 50%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(8px) ;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.9);
+    margin-top:3rem ;
+    padding: 20px;
+}
+
+
+.linkTwo
+{
+    width:200px;
+    text-align: center;
+    margin-top:30px;
+    font-size: 20px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: bold;
+    color: #5f27cd;
+    border-width:3px;
+    border-style: solid;
+    border-radius: 20px;
+    text-decoration: none;
+}
+
+.linkTwo:hover
+{
+    color: white;
+    background-color: #5f27cd;
+}
+
+.inputAle {
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 75px;
+    height: 25px;
+    background-color: rgba(247, 132, 86, 0.171);
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.btnRolar{
+    font-family: 'Times New Roman', Times, serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    width: 100px;
+    height: 30px;
+    background-color: rgba(247, 132, 86, 0.171);
+    border-radius: 10px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.container2{
+    width: 35%;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background:rgba(0, 0, 0, 0.2);
+    backdrop-filter: blur(6px) ;
+    border-radius: 30px;
+    box-shadow: rgba(0, 0, 0, 0.9);
+    margin-top:3rem ;
+    padding: 20px;
+}
+
+.resultD{
+    height: 40px;
+    margin-top: 40px;
+    font-size: 35px;
+    text-align: center;
+    border: solid 2px #5f27cd;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+}
