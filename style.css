@@ -4,6 +4,15 @@
     box-sizing:border-box;
 }
 
+.imagemLogo{
+    margin-right: 85%;
+    height: 10px;
+}
+
+.logo{
+    height: 55px;
+}
+
 table
 {
     font-weight: bold;
@@ -17,6 +26,7 @@ h1
     font-family: Georgia, 'Times New Roman', Times, serif;
     text-align: center;
 }
+
 body
 {
     background: url("img/rpgImage.jpg") no-repeat repeat;
@@ -25,6 +35,7 @@ body
     flex-direction: column;
     align-items: center;
 }
+
 label{
     margin-bottom: 7px;
     font-size: 23px;
