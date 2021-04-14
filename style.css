@@ -20,6 +20,10 @@ table
     border-radius: 10px;
 }
 
+td{
+    text-align: center;
+}
+
 h1
 {
     margin-top: 20px;
