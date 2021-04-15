@@ -1,3 +1,21 @@
+@keyframes Roll{
+    0%{
+        transform: scale(0.1);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.2);
+        opacity: 1;
+        transform:rotate(2turn) ;
+    }
+    100%{
+        transform: scale(1);
+        transform:rotate(1turn) ;
+    }
+    
+}
+
+
 *{
     padding: 0;
     margin: 0;
@@ -96,7 +114,7 @@ label{
 
 .container2{
     width: 35%;
-    height: 300px;
+    height: 380px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -110,11 +128,9 @@ label{
 
 .resultD{
     height: 40px;
-    margin-top: 40px;
-    font-size: 35px;
+    margin-top: 78px;
+    font-size: 40px;
     text-align: center;
-    border: solid 2px #5f27cd;
-    width: 100px;
     margin-left: auto;
     margin-right: auto;
     border-radius: 20px;
@@ -127,4 +143,21 @@ label{
 
 .logo{
     height: 55px;
+}
+
+.rotate_01.btnRolar {
+    animation-duration: 2s;
+    animation-name: slidein;
+    animation-iteration-count: 2;
+}
+
+.rotate_dado{
+    display: block;
+    position: fixed;
+    top: 66%;
+    left: 87%;
+    width: 130px;
+    height: 130px;
+    margin: -60px 0 0 -250px;
+    animation: Roll 1.5s;
 }
